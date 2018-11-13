@@ -19,7 +19,7 @@ class InteractiveRecord
   end
 
   def intitialize(options = {})
-    option.each do |attr, value|
+    options.each do |attr, value|
       self.send("#{attr}=", value)
     end
   end
