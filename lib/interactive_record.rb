@@ -18,11 +18,11 @@ class InteractiveRecord
     column_names.compact
   end
 
-  def intitialize(options = {})
-    options.each do |attr, value|
-      self.send("#{attr}=", value)
-    end
-  end
+  def initialize(options = {})
+     options.each do |attr, value|
+       self.send("#{attr}=", value)
+     end
+   end
 
 
 end
